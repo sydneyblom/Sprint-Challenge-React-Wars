@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import SwCard from "./SwCard";
 import axios from "axios";
 
-export default function SwCharacters() {
+
+
+ function SwGrid() {
     // NOTE: The value given to useState() must be of the same type as your value is expected to be
     const [char, setChar] = useState([]);
   
@@ -24,17 +26,18 @@ export default function SwCharacters() {
         {char.map(chars => {
           return (
             <SwCard
-              key={char.id}
-              name={char.name}
-              gender={char.gender}
-              birthday={char.birth_year}
-              homeworld={char.homeworld}
-              species={char.species}
-              films={char.films}
-            
+              key={chars.id}
+              name={chars.name}
+              gender={chars.gender}
+              mass={chars.mass}
+              birth_year={chars.birth_year}
+         
             />
           );
         })}
       </div>
     );
   }
+
+
+  export default SwGrid;

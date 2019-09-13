@@ -1,15 +1,15 @@
 import React from "react";
+import styled from "styled-components";
+
+
 
 const SwCard = props => {
     return (
       <div className="char-list" key={props.id}>
         <h2> {props.name}</h2>
-        <p>Gender:{props.gender}</p>
-        <p>Birth Year:{props.birth_year}</p>
-        <p>Homeworld:{props.homeworld}</p>
-        <p>Species: {props.species}</p>
-        <p>Films: {props.films}</p>
-
+        <p>Gender: {props.gender}</p>
+        <p>Mass: {props.mass}</p>
+        <p>BirthYear:{props.birth_year}</p>
 
       </div>
     );

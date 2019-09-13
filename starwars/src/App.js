@@ -1,6 +1,6 @@
 import React from 'react';
-import SwGrid from "./components/SwGrid";
 import './App.css';
+import SwGrid from "./components/SwGrid";
 
 
 
