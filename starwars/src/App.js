@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
 import SwGrid from "./components/SwGrid";
+import './App.css';
+
 
 
 const App = () => {
@@ -13,8 +14,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <SwGrid />
       <h1 className="Header">React Wars</h1>
+      <SwGrid />
     </div>
   );
 }

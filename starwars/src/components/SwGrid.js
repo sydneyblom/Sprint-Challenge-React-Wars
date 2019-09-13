@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 import SwCard from "./SwCard";
 import axios from "axios";
 
-export default function SwCharcters() {
+export default function SwCharacters() {
     // NOTE: The value given to useState() must be of the same type as your value is expected to be
     const [char, setChar] = useState([]);
   
     useEffect(() => {
       axios
-        .get(`https://swapi.co/api/people/`)
+        .get(`https://swapi.co/api/people`)
         .then(response => {
-          const char = response.data;
+          console.log(response);
+          const char = response.data.results;
           console.log("Characters", char);
           setChar(char);
         })
@@ -20,7 +21,7 @@ export default function SwCharcters() {
     }, []);
     return (
       <div className="charsw">
-        {char.map(charsw => {
+        {char.map(chars => {
           return (
             <SwCard
               key={char.name}
