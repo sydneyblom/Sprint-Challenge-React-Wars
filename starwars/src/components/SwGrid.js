@@ -24,7 +24,7 @@ export default function SwCharacters() {
         {char.map(chars => {
           return (
             <SwCard
-              key={char.name}
+              key={char.id}
               name={char.name}
               gender={char.gender}
               birthday={char.birth_year}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Swcard = props => {
+const SwCard = props => {
     return (
       <div className="char-list" key={props.id}>
         <h2> {props.name}</h2>
@@ -15,5 +15,5 @@ const Swcard = props => {
     );
   };
   
-  export default Swcard;
+  export default SwCard;
   
